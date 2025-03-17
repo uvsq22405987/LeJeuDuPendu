@@ -1,0 +1,27 @@
+import random
+
+def choisir_mot():
+    mots = ["bonjour", "costume", "maisons", "saturne", "famille","chateau","hopital","voiture","horloge","dominos","golfeur","espagne","gorille","rosiers","habiter","odorant","aimable","numeros","trousse"]
+    return random.choice(mots)
+mot_deviner = choisir_mot()
+lettres_trouvees = []
+mot_cache = "*" * len(mot_deviner)
+p=0
+print("*" * len(mot_deviner))
+while mot_cache!= mot_deviner and p<= 8 :
+    lettre = input("Entrez une lettre : ").lower()
+    if lettre in mot_deviner:
+         lettres_trouvees.append(lettre)
+         mot_cache = "".join([l if l in lettres_trouvees else "*" for l in mot_deviner])
+         print(mot_cache)
+    else:
+        p+=1
+        if p == 1:
+            print(p,"érreur")
+            print(mot_cache)
+        else:
+            print(p,"érreurs")
+            print(mot_cache)
+    
+
+print("Le mot à deviner était :",mot_deviner)
