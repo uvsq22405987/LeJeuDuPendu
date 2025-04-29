@@ -4,6 +4,8 @@ import webbrowser
 import random
 import json
 from tkinter import messagebox
+
+# PENSER A TELECHARGER LE FICHIER LISTE_MOTS AVANT DE LANCER LE PROGRAMME
 ############################################################################################################################"
 ######################## FONCTION POUR LA PAGE D'ACCUEIL ############################
 # Fonction pour ouvrir les règles du jeu
