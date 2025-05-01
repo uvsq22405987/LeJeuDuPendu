@@ -220,9 +220,6 @@ def Page_jeu():
     canvas_pendu = tk.Canvas(root2, width=900, height=350, bg="black")
     canvas_pendu.place(x=100, y=00)
 
-    #L'entrée de saisie pour les lettres
-    #A faire ici
-
     #Choix de la longueur du mot
     Longueur_texte=tk.Label(root2,text="Choisis la longueur du mot      Et le nombre d'erreurs acceptés",font=("Arial",20),width=50)
     Longueur_texte.place(x=200,y=350)
@@ -233,6 +230,7 @@ def Page_jeu():
     Nb_erreurs=tk.Spinbox(root2, from_=4, to=7,font=("Arial",25),width=5)
     Nb_erreurs.place(x=700,y=400)
 
+    #Saisie des lettres
     Lettres=tk.Entry(root2,width=30,font=("Arial",25))
 
     #Boutons
