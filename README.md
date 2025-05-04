@@ -3,7 +3,7 @@ Projet du jeu du pendu
 
 Groupe de TD : S2MITD-01
 
-Noms des étudiants du groupe : 
+Noms des étudiants du groupe : Klervi, Ali, Chelsea, Mathis
 
 L'Url de dépôt du projet : 
 
