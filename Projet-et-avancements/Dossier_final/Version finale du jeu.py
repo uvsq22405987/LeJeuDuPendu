@@ -58,7 +58,7 @@ def ajout_nouveau_mot(nouveau_mot, mots, fichier): # Fonction pour ajouter un no
 
     if nouveau_mot not in mots[cle]: # Vérifie si le mot n'est pas déjà dans la liste
         mots[cle].append(nouveau_mot) # Si le mot n'est pas déjà dans la liste, on l'ajoute
-        sauvegarder_mots(fichier, mots) # Sauvegarde le dictionnaire mis à jour dans le fichier JSON
+        sauvegarder_mots(fichier_mots, mots) # Sauvegarde le dictionnaire mis à jour dans le fichier JSON
         messagebox.showinfo("Succès", f"Le mot '{nouveau_mot}' a été ajouté.") # Affiche un message de succès si le mot a été ajouté avec succès
     else: # Si le mot est déjà dans la liste, on affiche un message d'information
         messagebox.showinfo("Info", f"Le mot '{nouveau_mot}' est déjà dans le dictionnaire.") # Affiche un message d'information si le mot est déjà dans la liste
